@@ -1,8 +1,15 @@
-export const Tracklist = () => {
+export const Tracklist = ({ songTracks }) => {
     return (
         <div>
-            <h1>Tracklist Component</h1>
-            {/* Additional tracklist functionality can be added here */}
+            {songTracks.map((track) => {
+                return (
+                    <div key={track.id} className="track">
+                        <h3>{track.name}</h3>
+                        <p>{track.artist}</p>
+                        <p>{track.album}</p>
+                    </div>
+                )
+            })}
         </div>
     );
 }
