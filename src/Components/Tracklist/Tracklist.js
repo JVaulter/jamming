@@ -5,8 +5,7 @@ export const Tracklist = ({ songTracks }) => {
                 return (
                     <div key={track.id} className="track">
                         <h3>{track.name}</h3>
-                        <p>{track.artist}</p>
-                        <p>{track.album}</p>
+                        <p>{track.artist}|{track.album}</p>
                     </div>
                 )
             })}

@@ -1,5 +1,5 @@
 
-export const SearchResults = () => {
+export const SearchResults = ({results}) => {
     return (
         <div>
             <h1>Search Results Component</h1>

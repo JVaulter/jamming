@@ -1,7 +1,7 @@
 export const SearchButton = () => {
     return (
-        <button>
-            Search
+        <button type="submit">
+            SEARCH
         </button>
     );
 }

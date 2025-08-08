@@ -1,8 +1,18 @@
+import React from 'react';
+import { SearchButton } from '../Buttons/SearchButton';
+import styles from  './Searchbar.component.css';
+
 export const Searchbar = () => {
     return (
-        <div>
-            <h1>Searchbar Component</h1>
-            {/* Additional search functionality can be added here */}
+        <div className={styles.SearchBar}>
+            <form >
+                <div className={styles.SearchBarFields}>
+                    <input placeholder="Enter a song" />
+                </div>
+                <div className={styles.SearchBarSubmit}>
+                    <SearchButton />
+                </div>
+            </form>
         </div>
     );
 }

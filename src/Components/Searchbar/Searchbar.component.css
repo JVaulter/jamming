@@ -1,0 +1,14 @@
+
+.SearchBarFields {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+ .SearchBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+ }
+
