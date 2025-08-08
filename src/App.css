@@ -3,7 +3,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url('D:\github projects\Jamming\jamming\public\red-background.png');
+  background-image: url('C:\Users\jeroe\Documents\Documents\projecten\jamming\jamming\public\red-background.png');
   background-size: cover;
   background-repeat: repeat;
 }
@@ -37,18 +37,20 @@
 .results-playlist-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 20px;         /* ruimte tussen de kolommen */
+  gap: 20px;
+  /* ruimte tussen de kolommen */
   margin-top: 20px;
   padding: 0 20px;
 }
 
 /* Zorg dat beide kolommen dezelfde stijl hebben */
-.results-playlist-wrapper > * {
-  flex: 1;                        /* even brede kolommen */
+.results-playlist-wrapper>* {
+  flex: 1;
+  /* even brede kolommen */
   background-color: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -56,6 +58,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
