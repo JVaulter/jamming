@@ -43,51 +43,47 @@ function App() {
   }
 
   const searchResults = [
-  {
-    id: 6,
-    name: "Blinding Lights",
-    artist: "The Weeknd",
-    album: "After Hours"
-  },
-  {
-    id: 7,
-    name: "Levitating",
-    artist: "Dua Lipa",
-    album: "Future Nostalgia"
-  },
-  {
-    id: 8,
-    name: "Peaches",
-    artist: "Justin Bieber",
-    album: "Justice"
-  },
-  {
-    id: 9,
-    name: "Watermelon Sugar",
-    artist: "Harry Styles",
-    album: "Fine Line"
-  },
-  {
-    id: 10,
-    name: "drivers license",
-    artist: "Olivia Rodrigo",
-    album: "SOUR"
-  }
-];
+    {
+      id: 6,
+      name: "Blinding Lights",
+      artist: "The Weeknd",
+      album: "After Hours"
+    },
+    {
+      id: 7,
+      name: "Levitating",
+      artist: "Dua Lipa",
+      album: "Future Nostalgia"
+    },
+    {
+      id: 8,
+      name: "Peaches",
+      artist: "Justin Bieber",
+      album: "Justice"
+    },
+    {
+      id: 9,
+      name: "Watermelon Sugar",
+      artist: "Harry Styles",
+      album: "Fine Line"
+    },
+    {
+      id: 10,
+      name: "drivers license",
+      artist: "Olivia Rodrigo",
+      album: "SOUR"
+    }
+  ];
 
   return (
     <div className="App">
-      <div className="App-header">
-        <Searchbar />
+      <Searchbar />
+      <div className="results-playlist-wrapper">
+        <SearchResults results={searchResults} />
+        <Playlist playlist={playlist} />
       </div>
-      <div className="App-content">
-        <div  className="App-search-results">
-          <SearchResults results={searchResults}/>
-        </div>
-        <div className="App-playlist">
-          <Playlist playlist={playlist} />
-        </div>
-      </div>
+
+
     </div>
   );
 }
