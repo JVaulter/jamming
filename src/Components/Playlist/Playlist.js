@@ -1,9 +1,7 @@
 import { Tracklist } from "../Tracklist/Tracklist";
 import React, { useState } from 'react';
 
-export const Playlist = ({ playlist }) => {
-
-    const [tracks, setTracks] = useState(playlist.tracks);
+export const Playlist = ({ playlist, removeTrack }) => {
     const [name, setName] = useState(playlist.name);
 
 
@@ -14,7 +12,7 @@ export const Playlist = ({ playlist }) => {
                 <h1>{name}</h1>
             </div>
             <div>
-                <Tracklist songTracks={tracks} />
+                <Tracklist songTracks={playlist.tracks} removeTrack={removeTrack} />
             </div>
         </div>
     );
