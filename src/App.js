@@ -72,6 +72,14 @@ function App() {
     }
   ]);
 
+  const trackUris = [
+    "7kqhFEqZvl9ynxwD8No4qM",
+    "2kKMxha1iB9SSosC7S3AXF",
+    "6px340oxL4x4RrhLer462m",
+    "3S1fsqAI2wseDq6JcpamoY",
+    "6GsP3uMCd0Dn5T37C93waZ"
+  ]
+
   // Functions to add and remove tracks from the playlist
   const AddTrack = (track) => {
     if (playlistTracks.find(t => t.id === track.id)) {

@@ -1,0 +1,11 @@
+.saveToSpotifyButton {
+    background-color: #1DB954;
+    /* Spotify green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
