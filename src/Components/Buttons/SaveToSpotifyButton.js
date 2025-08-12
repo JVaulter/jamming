@@ -1,8 +1,8 @@
 import  './SaveToSpotify.component.css';
 
-export const SaveToSpotifyButton = () => {
+export const SaveToSpotifyButton = ({handleSaveToSpotify}) => {
     return (
-        <button className="saveToSpotifyButton">
+        <button className="saveToSpotifyButton" onClick={handleSaveToSpotify}>
             Save to Spotify
         </button>
     );

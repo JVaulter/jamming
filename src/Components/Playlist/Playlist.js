@@ -5,6 +5,7 @@ import './Playlist.component.css';
 
 export const Playlist = ({ playlist, removeTrack }) => {
     const [name, setName] = useState(playlist.name);
+    const url = "https://api.spotify.com/v1/tracks/"
 
     const trackUris = [
         "7kqhFEqZvl9ynxwD8No4qM",
@@ -14,10 +15,28 @@ export const Playlist = ({ playlist, removeTrack }) => {
         "6GsP3uMCd0Dn5T37C93waZ"
     ]
 
-    const handleSaveToSpotify = () => {
+    const handleSaveToSpotify = async () => {
         // Logic to save the playlist to Spotify using the trackUris
+        const endpoint = `${url}${trackUris[0]}`
+
+        try {
+
+              const response = await fetch(endpoint)
+
+              const data = await response.json();
+                console.log("Track data:", data);
+        } catch (error) {
+            console.error("Error saving to Spotify:", error);
+        }
+      
+
+
+
 
     }
+
+
+
 
     return (
         <div>
@@ -28,7 +47,7 @@ export const Playlist = ({ playlist, removeTrack }) => {
                 <Tracklist songTracks={playlist.tracks} removeTrack={removeTrack} />
             </div>
             <div>
-                <SaveToSpotifyButton onClick={() => { }} />
+                <SaveToSpotifyButton handleSaveToSpotify={handleSaveToSpotify} />
             </div>
         </div>
     );
