@@ -1,8 +1,8 @@
-import styles from './SaveToSpotify.component.css';
+import  './SaveToSpotify.component.css';
 
 export const SaveToSpotifyButton = () => {
     return (
-        <button className={styles.saveToSpotifyButton}>
+        <button className="saveToSpotifyButton">
             Save to Spotify
         </button>
     );

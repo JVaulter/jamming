@@ -2,11 +2,19 @@
 
 
 .searchbutton {
-    display: flex;
-    justify-content: center ;
-    margin-bottom: 10px;
-    width: 100%;
+  background-color: #61dafb;
+    /* Spotify green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
+.searchbutton:hover {
+    background-color: #7be3ff;
+}
 
 

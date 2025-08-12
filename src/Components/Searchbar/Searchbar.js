@@ -1,15 +1,15 @@
 import React from 'react';
 import { SearchButton } from '../Buttons/SearchButton';
-import styles from  './Searchbar.component.css';
+import  './Searchbar.component.css';
 
 export const Searchbar = () => {
     return (
-        <div className={styles.SearchBar}>
+        <div className="SearchBar">
             <form >
-                <div className={styles.SearchBarFields}>
+                <div className="SearchBarFields">
                     <input placeholder="Enter a song" />
                 </div>
-                <div className={styles.SearchBarSubmit}>
+                <div>
                     <SearchButton />
                 </div>
             </form>

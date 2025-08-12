@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './SearchButton.component.css';
+import "./SearchButton.component.css";
 
 export const SearchButton = () => {
     return (
-        <button type="submit" className={styles.searchbutton}>
-            SEARCH
+        <button type="submit" className="searchbutton">
+            Search
         </button>
     );
 }

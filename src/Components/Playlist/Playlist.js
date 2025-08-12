@@ -1,6 +1,7 @@
 import { Tracklist } from "../Tracklist/Tracklist";
 import React, { useState } from 'react';
 import SaveToSpotifyButton from "../Buttons/SaveToSpotifyButton";
+import './Playlist.component.css';
 
 export const Playlist = ({ playlist, removeTrack }) => {
     const [name, setName] = useState(playlist.name);
@@ -21,7 +22,7 @@ export const Playlist = ({ playlist, removeTrack }) => {
     return (
         <div>
             <div>
-                <input type="text" onChange={(text) => setName(prev => prev = text)} value={name} />
+                <input type="text" onChange={(text) => setName(prev => prev = text)} value={name} className="playlistName" />
             </div>
             <div>
                 <Tracklist songTracks={playlist.tracks} removeTrack={removeTrack} />
